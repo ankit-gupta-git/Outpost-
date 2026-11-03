@@ -1,0 +1,12 @@
+name = "outpost-tldraw-sync"
+main = "src/worker.ts"
+compatibility_date = "2025-10-01"
+
+# One Durable Object per canvas room, stored in its own SQLite database.
+[[durable_objects.bindings]]
+name = "TLDRAW_ROOM"
+class_name = "TldrawRoom"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["TldrawRoom"]

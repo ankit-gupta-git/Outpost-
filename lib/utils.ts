@@ -1,5 +1,4 @@
 export { cn } from "cn"
-export { cn } from "cn"
 
 // Enter sends, Shift + Enter adds a new line.
 export function submitOnEnter(submit: () => void) {
